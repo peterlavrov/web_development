@@ -346,6 +346,10 @@ template {
           box-sizing: border-box;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   margin: 0px;
 }

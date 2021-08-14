@@ -19,5 +19,6 @@
     border: 2px solid $black;
     border-radius: 2px;
     @include header_menu;
+    width: rem(200px);
   }
 }

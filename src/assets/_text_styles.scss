@@ -1,0 +1,52 @@
+
+@mixin header_menu {
+  font-family: 'sans semibold';
+  font-size: rem(20px);
+  line-height: rem(22px);
+  color: $black;
+}
+
+@mixin main_title {
+  font-family: 'sans semibold';
+  font-size: rem(60px);
+  color: $white;
+  letter-spacing: rem(5px);
+}
+
+@mixin title {
+  font-family: 'sans bold';
+  font-size: rem(30px);
+  color: $black;
+}
+
+@mixin home_text {
+  font-family: 'sans regular';
+  font-size: rem(22px);
+  color: $white;
+  letter-spacing: rem(1px);
+}
+
+@mixin about_text {
+  font-family: 'sans bold';
+  font-size: rem(15px);
+  color: $black;
+}
+
+@mixin advantage_name {
+  font-family: 'sans semibold';
+  font-size: rem(20px);
+  color: $black;
+}
+
+@mixin advantage_text {
+  font-family: 'sans regular';
+  font-size: rem(15px);
+  color: $black;
+  text-align: center;
+}
+
+@mixin button_home {
+  font-family: 'roboto bold';
+  font-size: rem(20px);
+  color: $white;
+}

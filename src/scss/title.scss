@@ -1,3 +1,7 @@
 .main-title {
   @include main_title;
 }
+
+.title {
+  @include title;
+}

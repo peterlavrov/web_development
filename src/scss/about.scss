@@ -1,0 +1,53 @@
+.about {
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: rem(40px);
+  }
+
+  &__text {
+    @include about_text;
+    width: 60%;
+    text-align: center;
+    margin-bottom: rem(120px);
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-basis: calc(100%/3);
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem(20px) rem(60px);
+  &__image {
+    width: rem(62px);
+    height: rem(62px);
+    overflow: hidden;
+    margin-bottom: rem(40px);
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: $black;
+    }
+  }
+
+  &__name {
+    @include advantage_name;
+    margin-bottom: rem(30px);
+  }
+
+  &__text {
+    @include advantage_text;
+  }
+}

@@ -1,0 +1,42 @@
+
+//large desktops and laptops
+@mixin medium_desktop() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+//medium desktops and portrait tablets
+@mixin medium_desktop() {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// portrait tablets and small desktops 
+@mixin small_desktop() {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+// landscape phones and portrait tablets
+@mixin tablets() {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+// landscape phones and smaller
+@mixin phones() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+// phones portrait
+@mixin small_phones() {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}

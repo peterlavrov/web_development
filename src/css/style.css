@@ -396,6 +396,10 @@ p {
   src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
 }
 @font-face {
+  font-family: "sans bold";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+@font-face {
   font-family: "roboto bold";
   src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
 }
@@ -430,6 +434,12 @@ p {
   font-size: 3rem;
   color: #fff;
   letter-spacing: 0.25rem;
+}
+
+.title {
+  font-family: "sans bold";
+  font-size: 1.5rem;
+  color: #212121;
 }
 
 .logo {
@@ -496,6 +506,7 @@ p {
   font-size: 1rem;
   line-height: 1.1rem;
   color: #212121;
+  width: 10rem;
 }
 
 .header {
@@ -514,6 +525,7 @@ p {
   min-height: 6rem;
   background-color: #fff;
   padding: 0 7.86%;
+  z-index: 20;
 }
 
 .home {
@@ -579,12 +591,85 @@ p {
 .home-content__angle {
   width: 1.6rem;
   height: 1.6rem;
-  color: #fff;
+  fill: #fff;
   overflow: hidden;
 }
 .home-content__angle:hover {
-  color: rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.5);
 }
 .home-content__angle:active {
-  color: rgba(255, 255, 255, 0.5);
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.about__container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__title {
+  margin-bottom: 2rem;
+}
+.about__text {
+  font-family: "sans bold";
+  font-size: 0.75rem;
+  color: #212121;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(100%/3);
+      flex-basis: calc(100%/3);
+}
+
+.advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 3rem;
+}
+.advantage__image {
+  width: 3.1rem;
+  height: 3.1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.advantage__image svg {
+  width: 100%;
+  height: auto;
+  fill: #212121;
+}
+.advantage__name {
+  font-family: "sans semibold";
+  font-size: 1rem;
+  color: #212121;
+  margin-bottom: 1.5rem;
+}
+.advantage__text {
+  font-family: "sans regular";
+  font-size: 0.75rem;
+  color: #212121;
+  text-align: center;
 }

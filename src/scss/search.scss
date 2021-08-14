@@ -1,0 +1,23 @@
+.search__form {
+  button {
+    padding: 0;
+    width: rem(19px);
+    height: rem(19px);
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  svg {
+    width: rem(19px);
+    height: rem(19px);
+  }
+
+  input {
+    padding: rem(4px);
+    border: 2px solid $black;
+    border-radius: 2px;
+    @include header_menu;
+  }
+}

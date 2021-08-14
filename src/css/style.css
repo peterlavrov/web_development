@@ -357,7 +357,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1400px;
-  padding: 0 5%;
+  padding: 0 7.86%;
 }
 
 ul {
@@ -398,4 +398,193 @@ p {
 @font-face {
   font-family: "roboto bold";
   src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+}
+.button {
+  padding: 1.25rem 2.15rem;
+  background-color: #00897b;
+  font-family: "roboto bold";
+  font-size: 1rem;
+  color: #fff;
+  border: 3px solid #00897b;
+}
+.button:hover {
+  border: 3px solid #fff;
+}
+.button:active {
+  border: 3px solid #fff;
+}
+
+.home-content__services.button {
+  background-color: transparent;
+  border: 3px solid #fff;
+}
+.home-content__services.button:hover {
+  background-color: #212121;
+}
+.home-content__services.button:active {
+  background-color: #212121;
+}
+
+.main-title {
+  font-family: "sans semibold";
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 0.25rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 6rem;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navigation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2.25rem;
+}
+.navigation__item a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "sans semibold";
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #212121;
+}
+.navigation__item:hover a {
+  text-decoration: underline;
+}
+
+.search__form button {
+  padding: 0;
+  width: 0.95rem;
+  height: 0.95rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.search__form svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.search__form input {
+  padding: 0.2rem;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  font-family: "sans semibold";
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #212121;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-height: 6rem;
+  background-color: #fff;
+  padding: 0 7.86%;
+}
+
+.home {
+  background-image: url("../images/home_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+.home::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100vh;
+}
+.home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(6rem);
+          transform: translateY(6rem);
+}
+.home-content__title {
+  margin-bottom: 1.25rem;
+}
+.home-content__text {
+  margin-bottom: 5.5rem;
+  font-family: "sans regular";
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.05rem;
+}
+.home-content__buttons {
+  margin-bottom: 4.5rem;
+}
+.home-content__angle {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #fff;
+  overflow: hidden;
+}
+.home-content__angle:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.home-content__angle:active {
+  color: rgba(255, 255, 255, 0.5);
 }

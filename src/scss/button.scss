@@ -1,0 +1,23 @@
+.button {
+  padding: rem(25px) rem(43px);
+  background-color: $green;
+  @include button_home;
+  border: 3px solid $green;
+  &:hover {
+    border: 3px solid $white;
+  }
+  &:active {
+    border: 3px solid $white;
+  }
+}
+
+.home-content__services.button {
+  background-color: transparent;
+  border: 3px solid $white;
+  &:hover {
+    background-color: $black;
+  }
+  &:active {
+    background-color: $black;
+  }
+}

@@ -1,1 +1,64 @@
 @import "./header.scss";
+
+.home {
+  background-image: url("../images/home_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba($color: $black_bg, $alpha: 0.8);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(rem(120px));
+
+    &__title {
+      margin-bottom: rem(25px);
+    }
+
+    &__text {
+      margin-bottom: rem(110px);
+      @include home_text;
+    }
+
+    &__buttons {
+      margin-bottom: rem(90px);
+    }
+
+    &__angle {
+      width: rem(32px);
+      height: rem(32px);
+      color: $white;
+      overflow: hidden;
+
+      &:hover {
+        color: rgba($color: $white, $alpha: 0.5);
+      }
+
+      &:active {
+        color: rgba($color: $white, $alpha: 0.5);
+      }
+    }
+  }
+}

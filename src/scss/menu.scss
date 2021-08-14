@@ -1,0 +1,24 @@
+.navigation {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    
+  }
+
+  &__item {
+    display: flex;
+    margin-right: rem(45px);
+    a {
+      align-self: center;
+      @include header_menu;
+    }
+
+    &:hover {
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

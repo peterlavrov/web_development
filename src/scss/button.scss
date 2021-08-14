@@ -21,3 +21,16 @@
     background-color: $black;
   }
 }
+
+.service__button.button {
+  @include button_services;
+  padding: rem(18px) rem(12px);
+  background-color: transparent;
+  border: 2px solid $black;
+  &:hover {
+    border: 2px solid $black;
+  }
+  &:active {
+    border: 2px solid $black;
+  }
+}

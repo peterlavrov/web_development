@@ -1,0 +1,88 @@
+.services {
+  background-color: $salat_bg;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: rem(170px);
+    padding-bottom: rem(110px);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  &__title {
+    margin-bottom: rem(40px);
+  }
+
+  &__text {
+    @include about_text;
+    width: 60%;
+    text-align: center;
+    margin-bottom: rem(120px);
+  }
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 60px)/3);
+  margin-left: rem(10px);
+  margin-right: rem(10px);
+  margin-bottom: rem(10px);
+  padding: rem(60px) rem(50px);
+  background-color: $white;
+
+  &:hover {
+    background-color: $green;
+    box-shadow: 0 rem(10px) rem(20px) 0 rgba($color: $black_bg, $alpha: 0.35);
+    .service__image {
+      svg {
+        fill: $white;
+      }
+    }
+    
+    .service__name {
+      color: $white;
+    }
+    
+    .service__description {
+      color: $white;
+    }
+
+    .service__button.button {
+        border: 2px solid $white;
+        color: $white;
+    }
+  }
+
+  &__image {
+    width: rem(62px);
+    height: rem(62px);
+    overflow: hidden;
+    margin-bottom: rem(40px);
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: $black;
+    }
+  }
+
+  &__name {
+    @include advantage_name;
+    margin-bottom: rem(30px);
+  }
+
+  &__description {
+    text-align: center;
+    @include advantage_text;
+    margin-bottom: rem(42px);
+  }
+
+}

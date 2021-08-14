@@ -429,6 +429,21 @@ p {
   background-color: #212121;
 }
 
+.service__button.button {
+  font-family: "sans semibold";
+  font-size: 1rem;
+  color: #212121;
+  padding: 0.9rem 0.6rem;
+  background-color: transparent;
+  border: 2px solid #212121;
+}
+.service__button.button:hover {
+  border: 2px solid #212121;
+}
+.service__button.button:active {
+  border: 2px solid #212121;
+}
+
 .main-title {
   font-family: "sans semibold";
   font-size: 3rem;
@@ -672,4 +687,103 @@ p {
   font-size: 0.75rem;
   color: #212121;
   text-align: center;
+}
+
+.services {
+  background-color: #e4fdf9;
+}
+.services__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8.5rem;
+  padding-bottom: 5.5rem;
+}
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.services__title {
+  margin-bottom: 2rem;
+}
+.services__text {
+  font-family: "sans bold";
+  font-size: 0.75rem;
+  color: #212121;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: calc((100% - 60px)/3);
+      flex-basis: calc((100% - 60px)/3);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 3rem 2.5rem;
+  background-color: #fff;
+}
+.service:hover {
+  background-color: #00897b;
+  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.35);
+}
+.service:hover .service__image svg {
+  fill: #fff;
+}
+.service:hover .service__name {
+  color: #fff;
+}
+.service:hover .service__description {
+  color: #fff;
+}
+.service:hover .service__button.button {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.service__image {
+  width: 3.1rem;
+  height: 3.1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.service__image svg {
+  width: 100%;
+  height: auto;
+  fill: #212121;
+}
+.service__name {
+  font-family: "sans semibold";
+  font-size: 1rem;
+  color: #212121;
+  margin-bottom: 1.5rem;
+}
+.service__description {
+  text-align: center;
+  font-family: "sans regular";
+  font-size: 0.75rem;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 2.1rem;
 }

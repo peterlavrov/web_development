@@ -50,3 +50,9 @@
   font-size: rem(20px);
   color: $white;
 }
+
+@mixin button_services {
+  font-family: 'sans semibold';
+  font-size: rem(20px);
+  color: $black;
+}

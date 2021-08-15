@@ -19,8 +19,8 @@
             <nav class="home__navigation navigation">
               <ul class="navigation__list">
                 <li class="navigation__item"><a href="#">Home</a></li>
-                <li class="navigation__item"><a href="#">About</a></li>
-                <li class="navigation__item"><a href="#">Servicing</a></li>
+                <li class="navigation__item"><a href="#about">About</a></li>
+                <li class="navigation__item"><a href="#services">Servicing</a></li>
                 <li class="navigation__item"><a href="#">Portfolio</a></li>
                 <li class="navigation__item"><a href="#">Blog</a></li>
                 <li class="navigation__item"><a href="#">Contact us</a></li>
@@ -28,7 +28,7 @@
               <div class="header__search search">
                 <form action="#" method="GET" class="search__form">
                   <input type="text" name="query" id="search" placeholder="Search">
-                  <button type="submit">
+                  <button type="submit" title="search button">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img"
                       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                       class="svg-inline--fa fa-search fa-w-16 fa-3x">
@@ -45,10 +45,10 @@
             <h1 class="home-content__title main-title">Web development projekt</h1>
             <p class="home-content__text">Very suitable to support all web development projects</p>
             <div class="home-content__buttons">
-              <a href="#" class="home-content__services button">OUR SERVICES</a>
+              <a href="#services" class="home-content__services button">OUR SERVICES</a>
               <a href="#search" class="home-content__hire button">HIRE IS NOW</a>
             </div>
-            <a href="#" class="home-content__angle">
+            <a href="#about" class="home-content__angle" title="to about us section">
               <svg data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 80 320 512">
                 <path
                   d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
@@ -58,7 +58,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__container container">
           <h2 class="about__title title">About Us</h2>
           <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusantium quia
@@ -244,7 +244,7 @@
           </ul>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__container container">
           <h2 class="services__title title">Our Services</h2>
           <p class="services__text">
@@ -264,7 +264,8 @@
                 </svg>
               </div>
               <h3 class="service__name">Service</h3>
-              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
               <a href="#" class="service__button button">READ MORE</a>
             </li>
             <li class="services__item service">
@@ -278,7 +279,8 @@
                 </svg>
               </div>
               <h3 class="service__name">Service</h3>
-              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
               <a href="#" class="service__button button">READ MORE</a>
             </li>
             <li class="services__item service">
@@ -292,7 +294,8 @@
                 </svg>
               </div>
               <h3 class="service__name">Service</h3>
-              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
               <a href="#" class="service__button button">READ MORE</a>
             </li>
             <li class="services__item service">
@@ -306,21 +309,8 @@
                 </svg>
               </div>
               <h3 class="service__name">Service</h3>
-              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
-              <a href="#" class="service__button button">READ MORE</a>
-            </li>
-            <li class="services__item service">
-              <div class="service__image">
-                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="desktop" role="img"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
-                  class="svg-inline--fa fa-desktop fa-w-18 fa-3x">
-                  <path 
-                    d="M528 0H48C21.5 0 0 21.5 0 48v288c0 26.5 21.5 48 48 48h192l-24 96h-72c-8.8 0-16 7.2-16 16s7.2 16 16 16h288c8.8 0 16-7.2 16-16s-7.2-16-16-16h-72l-24-96h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM249 480l16-64h46l16 64h-78zm295-144c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16h480c8.8 0 16 7.2 16 16v288z"
-                    class=""></path>
-                </svg>
-              </div>
-              <h3 class="service__name">Service</h3>
-              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
               <a href="#" class="service__button button">READ MORE</a>
             </li>
             <li class="services__item service">
@@ -334,10 +324,87 @@
                 </svg>
               </div>
               <h3 class="service__name">Service</h3>
-              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</p>
+              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
+              <a href="#" class="service__button button">READ MORE</a>
+            </li>
+            <li class="services__item service">
+              <div class="service__image">
+                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="desktop" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                  class="svg-inline--fa fa-desktop fa-w-18 fa-3x">
+                  <path
+                    d="M528 0H48C21.5 0 0 21.5 0 48v288c0 26.5 21.5 48 48 48h192l-24 96h-72c-8.8 0-16 7.2-16 16s7.2 16 16 16h288c8.8 0 16-7.2 16-16s-7.2-16-16-16h-72l-24-96h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM249 480l16-64h46l16 64h-78zm295-144c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16h480c8.8 0 16 7.2 16 16v288z"
+                    class=""></path>
+                </svg>
+              </div>
+              <h3 class="service__name">Service</h3>
+              <p class="service__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum iti atque corrupti quos.</p>
               <a href="#" class="service__button button">READ MORE</a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="works">
+        <div class="works__container container">
+          <h2 class="works__title title">Lastest works</h2>
+          <p class="works__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum, voluptates ipsam
+            nesciunt aperiam fuga quibusdam. Necessitatibus quod odio consectetur, dolorem quis magni quos ut illo
+            fugiat praesentium eaque itaque?</p>
+          <div class="works__gallery gallery">
+            <ul class="gallery__tabs gallery-tabs">
+              <li class="gallery-tabs__item"><button class="gallery-tabs__tab button">ALL</button></li>
+              <li class="gallery-tabs__item"><button class="gallery-tabs__tab button">WEB DESIGN</button></li>
+              <li class="gallery-tabs__item"><button class="gallery-tabs__tab button">UI/UX DESIGN</button></li>
+              <li class="gallery-tabs__item"><button class="gallery-tabs__tab button">MOCKUPS</button></li>
+            </ul>
+            <ul class="gallery__slides gallery-slides">
+              <li class="gallery-slides__slide">
+                <img src="./src/images/watch.jpg" alt="slide picture" class="gallery-slides__background">
+                <div class="gallery-slides__description slides-description">
+                  <h3 class="slides-description__name">Hand Watch</h3>
+                  <span class="slides-description__type">ui/ux design</span>
+                </div>
+              </li>
+              <li class="gallery-slides__slide">
+                <img src="./src/images/watch.jpg" alt="slide picture" class="gallery-slides__background">
+                <div class="gallery-slides__description slides-description">
+                  <h3 class="slides-description__name">Hand Watch</h3>
+                  <span class="slides-description__type">ui/ux design</span>
+                </div>
+              </li>
+              <li class="gallery-slides__slide">
+                <img src="./src/images/watch.jpg" alt="slide picture" class="gallery-slides__background">
+                <div class="gallery-slides__description slides-description">
+                  <h3 class="slides-description__name">Hand Watch</h3>
+                  <span class="slides-description__type">ui/ux design</span>
+                </div>
+              </li>
+              <li class="gallery-slides__slide">
+                <img src="./src/images/watch.jpg" alt="slide picture" class="gallery-slides__background">
+                <div class="gallery-slides__description slides-description">
+                  <h3 class="slides-description__name">Hand Watch</h3>
+                  <span class="slides-description__type">ui/ux design</span>
+                </div>
+              </li>
+              <li class="gallery-slides__slide">
+                <img src="./src/images/watch.jpg" alt="slide picture" class="gallery-slides__background">
+                <div class="gallery-slides__description slides-description">
+                  <h3 class="slides-description__name">Hand Watch</h3>
+                  <span class="slides-description__type">ui/ux design</span>
+                </div>
+              </li>
+              <li class="gallery-slides__slide">
+                <img src="./src/images/watch.jpg" alt="slide picture" class="gallery-slides__background">
+                <div class="gallery-slides__description slides-description">
+                  <h3 class="slides-description__name">Hand Watch</h3>
+                  <span class="slides-description__type">ui/ux design</span>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="gallery__button button">VIEW ALL</a>
+          </div>
         </div>
       </section>
     </main>

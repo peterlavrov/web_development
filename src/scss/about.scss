@@ -1,6 +1,7 @@
 .about {
   &__container {
     height: 100vh;
+    min-height: rem(630px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +13,7 @@
   }
 
   &__text {
-    @include about_text;
+    @include section_paragraph;
     width: 60%;
     text-align: center;
     margin-bottom: rem(120px);

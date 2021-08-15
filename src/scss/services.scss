@@ -20,9 +20,8 @@
   }
 
   &__text {
-    @include about_text;
+    @include section_paragraph;
     width: 60%;
-    text-align: center;
     margin-bottom: rem(120px);
   }
 }

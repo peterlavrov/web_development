@@ -4,10 +4,14 @@
   @include button_home;
   border: 3px solid $green;
   &:hover {
-    border: 3px solid $white;
+    border: 3px solid $green;
+    background-color: $white;
+    color: $black;
   }
   &:active {
     border: 3px solid $white;
+    background-color: $green;
+    color: $black;
   }
 }
 
@@ -15,10 +19,14 @@
   background-color: transparent;
   border: 3px solid $white;
   &:hover {
-    background-color: $black;
+    border: 3px solid $green;
+    background-color: $white;
+    color: $black;
   }
   &:active {
-    background-color: $black;
+    border: 3px solid $green;
+    background-color: $white;
+    color: $black;
   }
 }
 
@@ -32,5 +40,18 @@
   }
   &:active {
     border: 2px solid $black;
+  }
+}
+
+.gallery__button.button {
+  align-self: center;
+  padding: rem(25px) rem(59px);
+  
+  &:hover {
+    border: 3px solid $black;
+  }
+  
+  &:active {
+    border: 3px solid $black;
   }
 }

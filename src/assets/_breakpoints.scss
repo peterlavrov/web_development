@@ -1,42 +1,42 @@
 
 //large desktops and laptops
-@mixin medium_desktop() {
-  @media screen and (min-width: 1200px) {
+@mixin large_desktop() {
+  @media screen and (min-width: $large_desktop_min) {
     @content;
   }
 }
 
 //medium desktops and portrait tablets
 @mixin medium_desktop() {
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+  @media screen and (min-width: $medium_desktop_min) and (max-width: $medium_desktop_max) {
     @content;
   }
 }
 
 // portrait tablets and small desktops 
 @mixin small_desktop() {
-  @media screen and (min-width: 768px) and (max-width: 991px) {
+  @media screen and (min-width: $small_desktop_min) and (max-width: $small_desktop_max) {
     @content;
   }
 }
 
 // landscape phones and portrait tablets
 @mixin tablets() {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablets_max) {
     @content;
   }
 }
 
 // landscape phones and smaller
 @mixin phones() {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $phones_max) {
     @content;
   }
 }
 
 // phones portrait
 @mixin small_phones() {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: $small_phones_max) {
     @content;
   }
 }

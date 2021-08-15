@@ -24,6 +24,7 @@
     align-items: center;
     position: relative;
     height: 100vh;
+    min-height: rem(630px);
   }
 
   &-content {

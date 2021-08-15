@@ -1,0 +1,86 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+
+  &-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(120px);
+
+    &__item {
+      margin-right: rem(20px);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-slides {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-bottom: rem(110px);
+
+    &__slide {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: calc((100% - 60px)/3);
+      margin-left: rem(10px);
+      margin-right: rem(10px);
+      margin-bottom: rem(20px);
+
+      &:hover {
+        .slides-description {
+          display: flex;
+        }
+      }
+    }
+
+    &__background {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left top;
+
+    }
+
+    &__description {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      h3 {
+        @include slide_description;
+        font-size: rem(20px);
+        z-index: 10;
+      }
+      
+      span {
+        @include slide_description;
+        font-size: rem(15px);
+        z-index: 10;
+      }
+      
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba($color: $black_bg, $alpha: 0.8);
+        z-index: 5;
+      }
+    }
+  }
+
+}

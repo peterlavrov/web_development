@@ -29,6 +29,7 @@
 @mixin section_paragraph {
   font-family: 'sans bold';
   font-size: rem(15px);
+  line-height: rem(22px);
   color: $black;
   text-align: center;
 }
@@ -58,8 +59,32 @@
   color: $black;
 }
 
+@mixin button_prices {
+  font-family: 'sans semibold';
+  font-size: rem(20px);
+  color: $black;
+}
+
 @mixin slide_description {
   font-family: 'sans semibold';
   line-height: rem(22px);
   color: $white;
+}
+
+@mixin prices_plan {
+  font-family: 'sans regular';
+  font-size: rem(25px);
+  color: $white;
+}
+
+@mixin prices_price {
+  font-family: 'sans regular';
+  font-size: rem(50px);
+  color: $white;
+}
+
+@mixin prices_includes {
+  font-family: 'sans light';
+  font-size: rem(17px);
+  color: $black;
 }

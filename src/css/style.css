@@ -388,20 +388,29 @@ p {
 }
 
 @font-face {
+  font-family: "sans light";
+  src: url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
   font-family: "sans regular";
   src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "sans semibold";
   src: url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "sans bold";
   src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "roboto bold";
   src: url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-display: swap;
 }
 .button {
   padding: 1.25rem 2.15rem;
@@ -463,6 +472,24 @@ p {
 }
 .gallery__button.button:active {
   border: 3px solid #212121;
+}
+
+.price__order.button {
+  font-family: "sans semibold";
+  font-size: 1rem;
+  color: #212121;
+  background-color: transparent;
+  border: 2px solid #212121;
+}
+.price__order.button:hover {
+  color: #fff;
+  border: 2px solid #00897b;
+  background-color: #00897b;
+}
+.price__order.button:active {
+  color: #fff;
+  border: 2px solid #00897b;
+  background-color: #00897b;
 }
 
 .main-title {
@@ -661,6 +688,7 @@ p {
 .about__text {
   font-family: "sans bold";
   font-size: 0.75rem;
+  line-height: 1.1rem;
   color: #212121;
   text-align: center;
   width: 60%;
@@ -743,6 +771,7 @@ p {
 .services__text {
   font-family: "sans bold";
   font-size: 0.75rem;
+  line-height: 1.1rem;
   color: #212121;
   text-align: center;
   width: 60%;
@@ -829,6 +858,7 @@ p {
 .works__text {
   font-family: "sans bold";
   font-size: 0.75rem;
+  line-height: 1.1rem;
   color: #212121;
   text-align: center;
   width: 60%;
@@ -944,4 +974,132 @@ p {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 5;
+}
+
+.prices__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+  background-color: #f0f0f1;
+}
+.prices__text {
+  font-family: "sans bold";
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  color: #212121;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 6rem;
+}
+.prices__title {
+  margin-bottom: 2rem;
+}
+.prices__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: calc((100% - 60px)/3);
+      flex-basis: calc((100% - 60px)/3);
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #fff;
+  padding-bottom: 3.15rem;
+}
+.price:hover {
+  -webkit-box-shadow: 0px 0.15rem 1.25rem 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0.15rem 1.25rem 0px rgba(0, 0, 0, 0.35);
+}
+.price:hover .button {
+  color: #fff;
+  border: 2px solid #00897b;
+  background-color: #00897b;
+}
+.price__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  background-color: #3949ab;
+  padding-top: 2.5rem;
+  padding-bottom: 1.75rem;
+}
+.price__plan {
+  font-family: "sans regular";
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 1.9rem;
+}
+.price__tax {
+  font-family: "sans regular";
+  font-size: 2.5rem;
+  color: #fff;
+}
+.price__tax sup {
+  font-size: 1.25rem;
+}
+.price__tax sub {
+  font-size: 0.85rem;
+}
+.price-includes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 3.3rem;
+}
+.price-includes__item {
+  display: block;
+  text-align: center;
+}
+.price-includes__item div {
+  border-bottom: 1px solid #f0f0f1;
+  padding: 0.5rem 1.25rem;
+  font-family: "sans light";
+  font-size: 0.85rem;
+  color: #212121;
+}
+.price__angle {
+  fill: #3949ab;
+  height: 1.5rem;
+  width: 100%;
 }

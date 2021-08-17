@@ -8,6 +8,22 @@
 
 html {
   font-size: 20px;
+
+  @include small_desktop {
+    font-size: 18px;
+  }
+
+  @include tablets {
+    font-size: 16px;
+  }
+
+  @include phones {
+    font-size: 12px;
+  }
+
+  @include small_phones {
+    font-size: 11px;
+  }
 }
 
 body {

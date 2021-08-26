@@ -1,24 +1,24 @@
-// одинаковая ширина и высота у слайдов и ширины углов у цен
+// одинаковая ширина и высота у слайдов
 
-const slide = document.querySelector('.gallery-slides__slide');
-const slides = document.querySelectorAll('.gallery-slides__slide');
-
-console.log(slides);
-
-let slide_sizes = slide.offsetWidth + 'px';
-
-function countSlideSizes (width) {
-  slides.forEach(el => {
-    el.style.height = width;
-  });
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.querySelector('.gallery-slides__slide');
+  const slides = document.querySelectorAll('.gallery-slides__slide');
 
 
-countSlideSizes(slide_sizes);
+  let slide_sizes = slide.offsetWidth + 'px';
 
-window.addEventListener('resize', () => {
-  slide_sizes = slide.offsetWidth + 'px';
+  function countSlideSizes(width) {
+    slides.forEach(el => {
+      el.style.height = width;
+    });
+  }
+
+
   countSlideSizes(slide_sizes);
+
+  window.addEventListener('resize', () => {
+    slide_sizes = slide.offsetWidth + 'px';
+    countSlideSizes(slide_sizes);
+  });
+
 });
-
-

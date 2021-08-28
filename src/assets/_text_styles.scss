@@ -88,3 +88,16 @@
   font-size: rem(17px);
   color: $black;
 }
+
+@mixin member_name {
+  font-family: 'sans semibold';
+  font-size: rem(20px);
+  color: $black;
+  
+}
+
+@mixin member_position {
+  font-family: 'sans regular';
+  font-size: rem(15px);
+  color: $black;
+}

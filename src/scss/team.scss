@@ -1,0 +1,99 @@
+.team {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: rem(130px);
+        padding-bottom: rem(130px);
+    }
+
+    &__text {
+        @include section_paragraph;
+        width: 60%;
+        margin-bottom: rem(120px);
+    }
+    
+    &__title {
+        margin-bottom: rem(40px);
+    }
+    
+    &__list {
+        display: flex;
+    }
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc((100% - 60px)/3);
+    padding-right: rem(10px);
+    padding-left: rem(10px);
+    &-socials {
+        &__social {
+            width: rem(20px);
+            height: rem(20px);
+        }
+    }
+    
+    &__image {
+        img {
+            width: 100%;
+            height: rem(320px);
+            object-fit: cover;
+            border-radius: rem(7px);
+        }
+        margin-bottom: rem(38px);
+    }
+
+    
+    &__name {
+        @include member_name;
+        margin-bottom: rem(15px);
+    }
+    
+    &__position {
+        @include member_position;
+        margin-bottom: rem(33px);
+    }
+    
+    &-socials {
+        display: flex;
+        justify-content: center;
+        &__social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            width: rem(50px);
+            height: rem(50px);
+            margin-right: rem(27px);
+            background-color: $cream_bg;
+            border-radius: rem(7px);
+            
+            &:hover {
+                background-color: $violet;
+                svg {
+                    fill: $white;
+                }
+                
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            svg {
+                fill: $green;
+                width: rem(25px);
+                height: rem(25px);
+            }
+        }
+    }    
+}

@@ -101,3 +101,21 @@
   font-size: rem(15px);
   color: $black;
 }
+
+@mixin blog_link {
+  font-family: 'sans semibold';
+  font-size: rem(25px);
+  color: $black;
+}
+
+@mixin blog_data {
+  font-family: 'sans semibold';
+  font-size: rem(17px);
+  color: $black;
+}
+
+@mixin blog_text {
+  font-family: 'sans regular';
+  font-size: rem(15px);
+  color: $black;
+}
